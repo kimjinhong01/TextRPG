@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\TextRPG Project.csproj": {}
+    "D:\\C#\\TextRPG\\TextRPG Project\\TextRPG Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\TextRPG Project.csproj": {
+    "D:\\C#\\TextRPG\\TextRPG Project\\TextRPG Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\TextRPG Project.csproj",
+        "projectUniqueName": "D:\\C#\\TextRPG\\TextRPG Project\\TextRPG Project.csproj",
         "projectName": "TextRPG Project",
-        "projectPath": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\TextRPG Project.csproj",
+        "projectPath": "D:\\C#\\TextRPG\\TextRPG Project\\TextRPG Project.csproj",
         "packagesPath": "C:\\Users\\kimji\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\obj\\",
+        "outputPath": "D:\\C#\\TextRPG\\TextRPG Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

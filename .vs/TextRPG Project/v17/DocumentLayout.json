@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\",
+  "WorkspaceRootPath": "D:\\C#\\TextRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A04DA8C-450B-4D3E-96D4-BE41015E9D42}|TextRPG Project\\TextRPG Project.csproj|c:\\users\\kimji\\source\\repos\\textrpg project\\textrpg project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A04DA8C-450B-4D3E-96D4-BE41015E9D42}|TextRPG Project\\TextRPG Project.csproj|d:\\c#\\textrpg\\textrpg project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A04DA8C-450B-4D3E-96D4-BE41015E9D42}|TextRPG Project\\TextRPG Project.csproj|solutionrelative:textrpg project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\Program.cs",
+              "DocumentMoniker": "D:\\C#\\TextRPG\\TextRPG Project\\Program.cs",
               "RelativeDocumentMoniker": "TextRPG Project\\Program.cs",
-              "ToolTip": "C:\\Users\\kimji\\source\\repos\\TextRPG Project\\TextRPG Project\\Program.cs",
+              "ToolTip": "D:\\C#\\TextRPG\\TextRPG Project\\Program.cs",
               "RelativeToolTip": "TextRPG Project\\Program.cs",
-              "ViewState": "AgIAAC4BAAAAAAAAAAAYwDYBAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAYwLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T00:27:09.258Z",
               "EditorCaption": ""

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.VisualBasic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Numerics;
 
@@ -145,13 +146,30 @@ class Stage
     {
         Console.Clear();
 
+        int atk = 0;
+        int def = 0;
+
+        foreach (Item item in player.items)
+        {
+            if (item.IsEquip && item.type == ItemType.WEAPON)
+                atk += item.value;
+            else if (item.IsEquip && item.type == ItemType.ARMOR)
+                def += item.value;
+        }
+
         Console.WriteLine("상태 보기");
         Console.WriteLine("캐릭터의 정보가 표시됩니다.");
         Console.WriteLine();
         Console.WriteLine($"Lv.{player.level}");
         Console.WriteLine($"{player.name} ( {player.job} )");
-        Console.WriteLine($"공격력 : {player.attack}");
-        Console.WriteLine($"방어력 : {player.defense}");
+        if (atk != 0)
+            Console.WriteLine($"공격력 : {player.attack} (+{atk})");
+        else
+            Console.WriteLine($"공격력 : {player.attack}");
+        if (def != 0)
+            Console.WriteLine($"방어력 : {player.defense} (+{def})");
+        else
+            Console.WriteLine($"방어력 : {player.defense}");
         Console.WriteLine($"체 력 : {player.health}");
         Console.WriteLine($"Gold : {player.gold} G");
         Console.WriteLine();
@@ -276,28 +294,27 @@ class Stage
         else if (input < 0 || input > shop.items.Count)
         {
             Console.WriteLine("잘못된 입력입니다.");
-            Thread.Sleep(1000);
-            return;
-        }
 
-        if (shop.items[input - 1].IsBuy)
-        {
-            Console.WriteLine("이미 구매한 아이템입니다");
-            Thread.Sleep(1000);
-            return;
-        }
-        else if (shop.items[input - 1].price <= player.gold)
-        {
-            player.items.Add(shop.items[input - 1]);
-            shop.items[input - 1].IsBuy = true;
-            player.gold -= shop.items[input - 1].price;
-            Console.WriteLine("구매를 완료했습니다");
             Thread.Sleep(1000);
             return;
         }
         else
         {
-            Console.WriteLine("Gold 가 부족합니다");
+            if (shop.items[input - 1].IsBuy)
+            {
+                Console.WriteLine("이미 구매한 아이템입니다");
+            }
+            else if (shop.items[input - 1].price <= player.gold)
+            {
+                player.items.Add(shop.items[input - 1]);
+                shop.items[input - 1].IsBuy = true;
+                player.gold -= shop.items[input - 1].price;
+                Console.WriteLine("구매를 완료했습니다");
+            }
+            else
+            {
+                Console.WriteLine("Gold 가 부족합니다");
+            }
             Thread.Sleep(1000);
             return;
         }
